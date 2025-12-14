@@ -2,7 +2,7 @@
 
 This repository contains a performance comparison of YOLOv8 inference implementations using **Python (Ultralytics)** and **C++ (ONNX Runtime)**.
 
-My goal was to analyze the overhead introduced by the Python interpreter, Global Interpreter Lock (GIL), and Garbage Collector compared to a raw C++ implementation in a real-time computer vision context.
+My goal was to analyze the overhead introduced by the Python interpreter, Global Interpreter Lock (GIL), Garbage Collector and Pytorch eager mode compared to a raw C++ .onnx implementation in a real-time computer vision context.
 
 
 ## 📂 Project Structure
