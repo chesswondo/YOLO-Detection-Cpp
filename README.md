@@ -43,7 +43,7 @@ Tests were conducted on a webcam feed (640x480). The models were configured with
 | **Real FPS** | ~48 FPS | ~64 FPS |
 | **RAM utilization** | ~980 MB | ~700 MB |
 
-**Observation:** While C++ slightly (~25% faster) outperforms Python in pure GPU inference time and overall throughput (real FPS), the difference in system stability (Jitter) is significant due to the lack of GC overhead and faster pre/post-processing. It is critical for edge devices.
+**Observation:** While C++ slightly (~25% faster) outperforms Python in pure GPU inference time (+ pre/postprocessing CPU operations) and overall throughput (real FPS), the difference in system stability (Jitter) is significant due to the lack of GC overhead and faster pre/post-processing. It is critical for edge devices.
 
 
 ## 📝 Methodology
