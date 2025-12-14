@@ -1,0 +1,10 @@
+# C++ ignore list
+YoloCpp/.vs/
+YoloCpp/models/
+YoloCpp/out/
+YoloCpp/CMakeSettings.json
+
+# Python ignore list
+YoloPython/models/
+YoloPython/test_fps_report.txt
+YoloPython/web_fps_report.txt
