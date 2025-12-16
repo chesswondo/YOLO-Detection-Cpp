@@ -36,8 +36,8 @@ Tests were conducted on a webcam feed (640x480). The models were configured with
 
 | Metric | Python (Ultralytics) | C++ (ONNX Runtime) |
 | :--- | :--- | :--- |
-| **Inference Time (Avg)** | ~13.15 ms | ~10.6 ms |
-| **Inference Jitter (Std)** | ~2.8 ms | ~1.15 ms |
+| **Inference Time (Avg)** | ~13.1 ms | ~10.6 ms |
+| **Inference Jitter (Std)** | ~2.8 ms | ~1.1 ms |
 | **End-to-End Latency (Avg)** | ~21.0 ms | ~15.6 ms |
 | **End-to-End Jitter (Std)** | ~7.5 ms | ~2.0 ms |
 | **Real FPS** | ~48 FPS | ~64 FPS |
