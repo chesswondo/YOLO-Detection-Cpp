@@ -5,7 +5,7 @@ This repository contains a performance comparison of YOLOv8 inference implementa
 My goal was to analyze the overhead introduced by the Python interpreter, Global Interpreter Lock (GIL), Garbage Collector and Pytorch eager mode compared to a raw C++ .onnx implementation in a real-time computer vision context.
 
 
-## 📂 Project Structure
+## Project Structure
 <pre>
 ├── YoloCpp/                      # C++ implementation
 │   ├── src/
@@ -25,7 +25,7 @@ My goal was to analyze the overhead introduced by the Python interpreter, Global
 </pre>
 
 
-## 📊 Benchmark Results
+## Benchmark Results
 
 In this project I measure not just FPS, but also:
 - **Inference Latency:** Pure model computation time.
@@ -46,7 +46,7 @@ Tests were conducted on a webcam feed (640x480). The models were configured with
 **Observation:** While C++ slightly (~25% faster) outperforms Python in pure GPU inference time (+ pre/postprocessing CPU operations) and overall throughput (real FPS), the difference in system stability (Jitter) is significant due to the lack of GC overhead and faster pre/post-processing. It is critical for edge devices.
 
 
-## 📝 Methodology
+## Methodology
 **1. Warmup:** A dummy tensor is passed through the network to initialize CUDA contexts and allocate memory buffers.
 
 **2. Threaded Capture:** A separate thread constantly grabs the latest frame from the camera buffer.
